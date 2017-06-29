@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1AE856C32913F294761CA1C9 /* Pods_Makestagram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB3D662D02E8E6FE03D2FA19 /* Pods_Makestagram.framework */; };
 		BFAF33301F056F4F00B6CDB7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFAF332F1F056F4F00B6CDB7 /* AppDelegate.swift */; };
 		BFAF33321F056F4F00B6CDB7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFAF33311F056F4F00B6CDB7 /* ViewController.swift */; };
 		BFAF33351F056F4F00B6CDB7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFAF33331F056F4F00B6CDB7 /* Main.storyboard */; };
@@ -15,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7C58A0552B671862D7ED45E5 /* Pods-Makestagram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Makestagram.release.xcconfig"; path = "Pods/Target Support Files/Pods-Makestagram/Pods-Makestagram.release.xcconfig"; sourceTree = "<group>"; };
+		AACF92EE84796D9810277830 /* Pods-Makestagram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Makestagram.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Makestagram/Pods-Makestagram.debug.xcconfig"; sourceTree = "<group>"; };
 		BFAF332C1F056F4F00B6CDB7 /* Makestagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Makestagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFAF332F1F056F4F00B6CDB7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BFAF33311F056F4F00B6CDB7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		BFAF33361F056F4F00B6CDB7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BFAF33391F056F4F00B6CDB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BFAF333B1F056F4F00B6CDB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB3D662D02E8E6FE03D2FA19 /* Pods_Makestagram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Makestagram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1AE856C32913F294761CA1C9 /* Pods_Makestagram.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E1F8FB08430ABD3E8F452F3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DB3D662D02E8E6FE03D2FA19 /* Pods_Makestagram.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BFAF33231F056F4F00B6CDB7 = {
 			isa = PBXGroup;
 			children = (
 				BFAF332E1F056F4F00B6CDB7 /* Makestagram */,
 				BFAF332D1F056F4F00B6CDB7 /* Products */,
+				E556334ECB47086DF07A7140 /* Pods */,
+				0E1F8FB08430ABD3E8F452F3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +79,15 @@
 			path = Makestagram;
 			sourceTree = "<group>";
 		};
+		E556334ECB47086DF07A7140 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AACF92EE84796D9810277830 /* Pods-Makestagram.debug.xcconfig */,
+				7C58A0552B671862D7ED45E5 /* Pods-Makestagram.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BFAF333E1F056F4F00B6CDB7 /* Build configuration list for PBXNativeTarget "Makestagram" */;
 			buildPhases = (
+				517022493F7A0AD785022183 /* [CP] Check Pods Manifest.lock */,
 				BFAF33281F056F4F00B6CDB7 /* Sources */,
 				BFAF33291F056F4F00B6CDB7 /* Frameworks */,
 				BFAF332A1F056F4F00B6CDB7 /* Resources */,
+				2D9C76462F7BF2B707B79A21 /* [CP] Embed Pods Frameworks */,
+				47BA3C89DDA8E8EE985391A0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2D9C76462F7BF2B707B79A21 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Makestagram/Pods-Makestagram-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		47BA3C89DDA8E8EE985391A0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Makestagram/Pods-Makestagram-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		517022493F7A0AD785022183 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BFAF33281F056F4F00B6CDB7 /* Sources */ = {
@@ -259,6 +334,7 @@
 		};
 		BFAF333F1F056F4F00B6CDB7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AACF92EE84796D9810277830 /* Pods-Makestagram.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = Y75Z9QMBUV;
@@ -272,6 +348,7 @@
 		};
 		BFAF33401F056F4F00B6CDB7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C58A0552B671862D7ED45E5 /* Pods-Makestagram.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = Y75Z9QMBUV;
